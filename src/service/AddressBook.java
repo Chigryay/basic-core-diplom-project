@@ -66,19 +66,19 @@ public class AddressBook {
 
     private Contact returnNewContact() throws IOException {
         System.out.print("Введите Ф. И. О.: ");
-        String fullName = reader.readLine();
+        String fullName = reader.readLine().trim();
 
         System.out.print("Введите должность: ");
-        String position = reader.readLine();
+        String position = reader.readLine().trim();
 
         System.out.print("Введите дату рождения: ");
-        String birthday = reader.readLine();
+        String birthday = reader.readLine().trim();
 
         System.out.print("Введите номер телефона: ");
-        String phoneNumber = reader.readLine();
+        String phoneNumber = reader.readLine().trim();
 
         System.out.print("Введите адресную почту: ");
-        String email = reader.readLine();
+        String email = reader.readLine().trim();
 
         return new Contact(fullName, position, birthday, phoneNumber, email);
     }
